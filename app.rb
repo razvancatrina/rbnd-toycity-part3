@@ -30,8 +30,8 @@ Product.new(title: "LEGO Iron Man vs. Ultron", price: 22.99, stock: 55)
 
 # CUSTOMERS
 
-# Customer.new(name: "Walter Latimer")
-# Customer.new(name: "Julia Van Cleve")
+Customer.new(name: "Walter Latimer")
+Customer.new(name: "Julia Van Cleve")
 
 # puts Customer.all.count # Should return 2
 

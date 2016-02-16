@@ -12,6 +12,10 @@ class Product
 		@@products
 	end
 
+	def self.stock?
+		@@products.stock > 0
+	end
+
 	private
 
 	def add_to_products
