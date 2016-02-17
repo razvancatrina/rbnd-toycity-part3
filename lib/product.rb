@@ -19,6 +19,10 @@ class Product
 	private
 
 	def add_to_products
-		@@products << self
+		if @@products.any?{ |product| product.title == @title }
+			#raise DuplicateProductError, "DuplicateProductError: '#{@title} already exists"
+		else
+			@@products << self
+		end
 	end
 end

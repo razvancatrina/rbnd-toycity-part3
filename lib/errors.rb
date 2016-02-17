@@ -1,3 +1,3 @@
-class DuplicateError < StandardError
+class DuplicateProductError < StandardError
 
 end
