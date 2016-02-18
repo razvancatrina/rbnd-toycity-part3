@@ -22,6 +22,10 @@ class Product
 		@stock > 0
 	end
 
+	def stock=(value)
+		@stock = value
+	end
+
 	def self.in_stock
 		@@products.select{ |product| product.in_stock? }
 	end

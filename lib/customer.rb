@@ -15,6 +15,10 @@ class Customer
 		@@customers.select{ |customer| customer.name == customer_name}.first
 	end
 
+	def purchase(product)
+		transaction = Transaction.new(self, product);
+	end
+
 	private 
 
 	def add_to_customers
