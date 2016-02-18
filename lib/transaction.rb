@@ -4,14 +4,14 @@ class Transaction
 	attr_reader :customer, :product
 
 	def initialize(customer, product)
+		@customer = customer
+		@product = product
 
-		if @product.stock < 0 
-			raise OutOfStockError, "OutOfStockError: '#{@product.title} is out of stock."
+		if @product.stock <= 0 
+			#raise OutOfStockError, "OutOfStockError: '#{@product.title} is out of stock."
 		end
 
 		@@id += 1
-		@customer = customer
-		@product = product
 
 		@product.stock = @product.stock - 1
 
