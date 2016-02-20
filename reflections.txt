@@ -1,0 +1,16 @@
+Q: How long did you spend working on this project?
+A: 120 minutes
+
+Q: What was the most rewarding challenge you conquered?
+A: I am happy that I have a better understanding of ruby oop concepts and usages
+
+Q: What two additional features did you build? Why?
+A: 1. I added 2 new properties
+	- address for Customer - this can be used for shipping purposes
+	- description for Product - this is useful for the customers when deciding to buy a particular product
+   2. I added a print_transactions_details method inside Transaction class - this is useful for reporting purposes
+
+Q: Where do you still have room to grow?
+A: 
+	- maybe going deeper with the oop aspects
+	- for the moment I am not sure if I follow ruby best practices when writing code
