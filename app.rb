@@ -5,7 +5,7 @@ require_relative "lib/transaction"
 
 # PRODUCTS
 
-Product.new(title: "LEGO Iron Man vs. Ultron", price: 22.99, stock: 55)
+Product.new(title: "LEGO Iron Man vs. Ultron", price: 22.99, stock: 55, description: "this is a modern toy")
 Product.new(title: "Nano Block Empire State Building", price: 49.99, stock: 12)
 Product.new(title: "LEGO Firehouse Headquarter", price: 199.99, stock: 0)
 
@@ -30,8 +30,8 @@ puts products_in_stock.include?(firehouse) # Should return false
 
 # CUSTOMERS
 
-Customer.new(name: "Walter Latimer")
-Customer.new(name: "Julia Van Cleve")
+Customer.new(name: "Walter Latimer", address: "address 1")
+Customer.new(name: "Julia Van Cleve", address: "address 2")
 
 puts Customer.all.count # Should return 2
 
@@ -64,3 +64,6 @@ puts transaction2.product == nanoblock # Should return true
 
 walter.purchase(firehouse)
 # Should return OutOfStockError: 'LEGO Firehouse Headquarter' is out of stock.
+
+#print transactions details
+Transaction.print_transactions_details
