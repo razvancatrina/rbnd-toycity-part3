@@ -8,7 +8,7 @@ class Transaction
 		@product = product
 
 		if @product.stock <= 0 #the stock should not be less than zero but maybe we should be defensive here
-			#raise OutOfStockError, "OutOfStockError: '#{@product.title} is out of stock."
+			raise OutOfStockError, "OutOfStockError: '#{@product.title} is out of stock."
 		end
 
 		@@id += 1
